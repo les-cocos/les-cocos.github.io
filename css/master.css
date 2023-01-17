@@ -1,0 +1,120 @@
+@import url(nav.css);
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #000000;
+    color: #fff;
+}
+
+.main {
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin-top: 60px;
+    margin-right: 60px;
+    padding: 0;
+}
+
+.banner h2 {
+    margin-top: 0;
+    margin-right: 60px;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.presentation-part {
+    width: calc(100vw - 40px);
+    background: #111111;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.people-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.people .people-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    border: solid 1px darkred;
+    background: crimson;
+}
+
+.people h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.people h3 {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+img.page-presentation-banner {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+}
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
